@@ -6,7 +6,7 @@ var cars = [
 ]
 
 function createCar(car) {
-    return ‵
+    return `
         <div class="card">
             <div class="card-img">
                 <img src="${car.img}" alt="${car.name}">
@@ -14,7 +14,8 @@ function createCar(car) {
             <h3>${car.name}</h3>
             <p>${car.price} $</p>
         </div>
-    ‵
+`
+    
 }
 
 var templates = cars.map(car => createCar(car))
